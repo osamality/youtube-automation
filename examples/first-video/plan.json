@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "channel": "my-channel",
+  "title": "One file, one video",
+  "summary": "How a single plan file becomes a narrated, animated YouTube video and a Short.",
+  "scenes": [
+    {
+      "template": "hook",
+      "short": "also",
+      "narration": "This whole video started as one small text file.",
+      "props": { "kicker": "youtube-auto", "title": "One file. One video.", "highlight": "One video." }
+    },
+    {
+      "template": "counter",
+      "short": "also",
+      "narration": "From that one file, the engine makes two videos: a wide one and a Short.",
+      "props": { "value": 2, "label": "videos from one plan", "sublabel": "16:9 video and 9:16 Short" }
+    },
+    {
+      "template": "list",
+      "short": "also",
+      "narration": "It records the voice, animates every scene and writes the upload checklist.",
+      "props": {
+        "title": "What the engine does",
+        "items": [
+          { "text": "Records the narration", "icon": "mic" },
+          { "text": "Animates every scene", "icon": "clapperboard" },
+          { "text": "Writes the upload kit", "icon": "upload" }
+        ]
+      }
+    },
+    {
+      "template": "compare",
+      "short": "also",
+      "narration": "You don't open an editor. You write scenes, then run one command.",
+      "props": {
+        "left": { "title": "Editing by hand", "icon": "clock", "tone": "negative", "points": ["Hours on a timeline", "Voice recorded separately"] },
+        "right": { "title": "A plan file", "icon": "file-text", "tone": "positive", "points": ["Scenes written as text", "One command renders it"] },
+        "verdict": "Write the plan. Run the render."
+      }
+    },
+    {
+      "template": "tip",
+      "short": "also",
+      "narration": "Keep every scene to one sentence, so the pictures change often.",
+      "props": { "number": 1, "label": "Tip", "title": "One sentence per scene", "text": "Short scenes keep the picture moving and the timing exact.", "emoji": "light-bulb" }
+    },
+    {
+      "template": "endscreen",
+      "narration": "Now make your own. Copy this plan, change the words and render it.",
+      "props": { "title": "Make your first video", "video": false }
+    }
+  ],
+  "upload": {
+    "titles": ["One file, one video: how this engine works"],
+    "thumbnails": [{ "text": "ONE FILE ONE VIDEO", "highlight": "ONE VIDEO", "emoji": "clapper-board" }],
+    "tags": ["video automation", "remotion"],
+    "short": { "title": "One text file became this video" }
+  }
+}
