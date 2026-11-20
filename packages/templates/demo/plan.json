@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "channel": "biztech",
+  "title": "How Netflix makes money",
+  "scenes": [
+    {
+      "template": "hook",
+      "narration": "Netflix made thirty-nine billion dollars in 2024. Almost all of it came from one simple idea.",
+      "props": {
+        "kicker": "How Netflix makes money",
+        "title": "$39 billion from one simple idea",
+        "highlight": "one simple idea"
+      }
+    },
+    {
+      "template": "counter",
+      "narration": "By the end of 2024, Netflix had more than three hundred million paid memberships.",
+      "props": {
+        "value": 301,
+        "suffix": "M",
+        "label": "paid memberships",
+        "sublabel": "End of 2024"
+      }
+    },
+    {
+      "template": "flow",
+      "narration": "The model is a loop. You pay every month. Netflix spends that money on new shows. And new shows keep you watching, and bring in new members.",
+      "props": {
+        "title": "The subscription loop",
+        "steps": [
+          { "label": "You pay monthly", "icon": "credit-card" },
+          { "label": "Netflix", "icon": "tv" },
+          { "label": "New shows", "icon": "clapperboard" },
+          { "label": "More members", "icon": "users" }
+        ],
+        "loop": true
+      }
+    },
+    {
+      "template": "chart",
+      "narration": "And the loop keeps growing. Revenue went from twenty-five billion dollars in 2020 to thirty-nine billion in 2024.",
+      "props": {
+        "title": "Netflix revenue per year",
+        "prefix": "$",
+        "suffix": "B",
+        "decimals": 1,
+        "bars": [
+          { "label": "2020", "value": 25.0 },
+          { "label": "2021", "value": 29.7 },
+          { "label": "2022", "value": 31.6 },
+          { "label": "2023", "value": 33.7 },
+          { "label": "2024", "value": 39.0, "highlight": true }
+        ],
+        "source": "Source: Netflix annual reports"
+      }
+    },
+    {
+      "template": "compare",
+      "narration": "In 2022, Netflix added a cheaper plan with ads. You pay less, and advertisers pay the difference.",
+      "props": {
+        "left": {
+          "title": "Standard",
+          "icon": "tv",
+          "tone": "neutral",
+          "points": ["No ads", "Higher monthly price", "You pay it all"]
+        },
+        "right": {
+          "title": "With ads",
+          "icon": "megaphone",
+          "tone": "positive",
+          "points": ["Lower monthly price", "Short ad breaks", "Advertisers pay too"]
+        },
+        "verdict": "More people can afford to join"
+      }
+    },
+    {
+      "template": "list",
+      "narration": "So Netflix wins three ways. Payments repeat every month. Its own shows give people a reason to stay. And ads bring in viewers who would not pay full price.",
+      "props": {
+        "title": "Why the model works",
+        "items": [
+          { "text": "Payments repeat every month", "icon": "repeat" },
+          { "text": "Own shows give a reason to stay", "icon": "clapperboard" },
+          { "text": "Ads bring in viewers who won't pay full price", "icon": "megaphone" }
+        ]
+      }
+    },
+    {
+      "template": "mascot",
+      "narration": "Next time you press play, remember: you are the business model.",
+      "props": {
+        "text": "Next time you press play… you are the business model."
+      }
+    }
+  ]
+}

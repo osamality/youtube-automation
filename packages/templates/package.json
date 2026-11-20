@@ -1,0 +1,30 @@
+{
+  "name": "@yt/templates",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./constants": "./src/constants.ts",
+    "./schema": "./src/schema.ts",
+    "./palettes": "./src/palettes.ts",
+    "./words": "./src/words.ts",
+    "./timeline": "./src/timeline.ts",
+    "./render": "./src/render.ts",
+    "./emoji": "./src/emoji.ts",
+    "./cast": "./src/cast.ts",
+    "./files": "./src/files.ts",
+    "./sample": "./src/sample.ts"
+  },
+  "dependencies": {
+    "@remotion/bundler": "4.0.542",
+    "@remotion/cli": "4.0.542",
+    "@remotion/google-fonts": "4.0.542",
+    "@remotion/renderer": "4.0.542",
+    "@remotion/transitions": "4.0.542",
+    "lucide-react": "^1.70.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "remotion": "4.0.542",
+    "zod": "^4.6.7"
+  }
+}

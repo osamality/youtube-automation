@@ -1,0 +1,49 @@
+# Channel config. Checked every time the yt command runs — run `yt channel check` after editing.
+
+id: __ID__                  # must match the folder name
+name: __NAME__              # display name, used in prompts and the dashboard
+language: en
+
+# Who watches and how the narrator sounds. The script writer reads both on every video.
+audience: "Describe the viewer: age, country, what they care about, what they already know"
+tone: "clear, fast, slightly witty, no hype"
+
+# long = 16:9 video (8–12 min). shorts = 9:16 cut-downs from the same scene plan.
+formats: [long, shorts]
+
+voice:
+  provider: kokoro          # kokoro (free, runs on this Mac) | elevenlabs (paid)
+  id: am_michael            # voice name at that provider
+  speed: 1.15
+
+theme:
+  palette: daylight         # colour set: daylight (bright, adults), sunrise (bright, kids), neon-night, dark-blue, midnight-purple, forest, warm-cream
+  font: Inter
+
+mascot: robot               # delete this line for no mascot (story/chat/tip scenes use the cartoon cast instead)
+mascot_corner: always       # always = the robot sits in the corner of every scene; hooks = only hook and tip scenes
+
+sound:
+  sfx: true                 # pops, whooshes, dings
+  music_volume: 0.15        # background tracks go in assets/music/
+
+# Animated scene templates this channel may use.
+templates: [hook, counter, flow, chart, compare, list, mascot, story, chat, tip]
+
+schedule:
+  long_per_week: 2
+  shorts_per_day: 1
+
+# YouTube upload defaults, used by each video's upload/UPLOAD.md.
+youtube:
+  verified: false           # set to true after verifying the channel at youtube.com/verify (needed for videos over 15 minutes)
+  category: Education       # Education | Science & Technology | Entertainment | Film & Animation | Howto & Style | News & Politics | People & Blogs
+  tags: []                  # added to every video's own tags
+  short_min_seconds: 20     # Shorts run 20–40 seconds
+  short_max_seconds: 40
+  publish:                  # next of these days at this time; UPLOAD.md also shows it in Gulf time
+    days: [tue, wed, thu]
+    time: "15:00"
+    timezone: America/New_York
+
+# youtube_token: secrets/__ID__.json   # added in Phase 5 when the channel is connected

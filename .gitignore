@@ -1,0 +1,25 @@
+node_modules/
+dist/
+.env
+data/
+secrets/
+out/
+*.log
+.DS_Store
+.playwright-mcp/
+
+# Build output
+tsconfig.tsbuildinfo
+__pycache__/
+*.pyc
+
+# Personal content: not part of the shared engine.
+# Channels. `yt channel add` creates new ones from packages/core/channel-template.
+channels/
+# Client work
+fauna-reel/
+# Launch plan and channel strategy
+PLAN.md
+# Manga channel tools and character prompts
+tools/manga/
+tools/imagegen/test-jobs.json

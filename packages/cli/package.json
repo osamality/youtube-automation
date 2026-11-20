@@ -1,0 +1,17 @@
+{
+  "name": "@yt/cli",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "yt": "./bin/yt.js"
+  },
+  "dependencies": {
+    "@yt/core": "^0.1.0",
+    "@yt/templates": "^0.1.0",
+    "commander": "^15.1.0",
+    "picocolors": "^1.1.1",
+    "playwright-core": "^1.65.0",
+    "tsx": "^4.23.15"
+  }
+}
